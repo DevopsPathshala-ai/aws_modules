@@ -3,3 +3,6 @@ output "subnet_ids" {
     for k, s in aws_subnet.this : k => s.id
   }
 }
+output "vpc_id" {
+  value = aws_vpc.this.id
+}
